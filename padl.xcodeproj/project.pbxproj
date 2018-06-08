@@ -14,6 +14,7 @@
 		9227994920CA072B00D12407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9227994720CA072B00D12407 /* LaunchScreen.storyboard */; };
 		9227995320CA104E00D12407 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9227995220CA104E00D12407 /* ProfileViewController.swift */; };
 		9227995520CA130200D12407 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9227995420CA130200D12407 /* CameraViewController.swift */; };
+		9227995720CA1C1C00D12407 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9227995620CA1C1C00D12407 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9227994A20CA072B00D12407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9227995220CA104E00D12407 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9227995420CA130200D12407 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9227995620CA1C1C00D12407 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				9227995220CA104E00D12407 /* ProfileViewController.swift */,
 				9227995420CA130200D12407 /* CameraViewController.swift */,
 				9227994220CA072B00D12407 /* Main.storyboard */,
+				9227995620CA1C1C00D12407 /* SearchViewController.swift */,
 				9227994520CA072B00D12407 /* Assets.xcassets */,
 				9227994720CA072B00D12407 /* LaunchScreen.storyboard */,
 				9227994A20CA072B00D12407 /* Info.plist */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9227995720CA1C1C00D12407 /* SearchViewController.swift in Sources */,
 				9227995320CA104E00D12407 /* ProfileViewController.swift in Sources */,
 				9227995520CA130200D12407 /* CameraViewController.swift in Sources */,
 				9227994120CA072B00D12407 /* ViewController.swift in Sources */,
