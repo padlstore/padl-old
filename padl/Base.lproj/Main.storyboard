@@ -38,7 +38,7 @@
             </objects>
             <point key="canvasLocation" x="397.60000000000002" y="386.35682158920542"/>
         </scene>
-        <!--Item-->
+        <!--Messaging View Controller-->
         <scene sceneID="sea-rj-af9">
             <objects>
                 <viewController id="wpV-6o-TFd" customClass="MessagingViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,13 +60,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z06-lh-qHJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="aqr-kU-Mtr"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="aqr-kU-Mtr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsF-vq-eFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1455.2" y="1081.7091454272863"/>
         </scene>
-        <!--Item-->
+        <!--Search View Controller-->
         <scene sceneID="cqh-dF-VUk">
             <objects>
                 <viewController id="Ef0-Ae-hus" customClass="SearchViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
@@ -88,7 +88,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bbG-fq-Ij7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="rvR-pK-opm"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="rvR-pK-opm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ew-I2-A5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,10 +177,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="gId-Rx-GU0" kind="relationship" relationship="viewControllers" id="hMz-0f-vGI"/>
-                        <segue destination="HsT-8n-wJs" kind="relationship" relationship="viewControllers" id="Gyn-wF-Ei3"/>
-                        <segue destination="TXu-24-5AS" kind="relationship" relationship="viewControllers" id="NIv-9F-nOM"/>
                         <segue destination="Ef0-Ae-hus" kind="relationship" relationship="viewControllers" id="ptP-zm-YeL"/>
+                        <segue destination="HsT-8n-wJs" kind="relationship" relationship="viewControllers" id="Gyn-wF-Ei3"/>
                         <segue destination="wpV-6o-TFd" kind="relationship" relationship="viewControllers" id="tnl-n2-q0v"/>
+                        <segue destination="TXu-24-5AS" kind="relationship" relationship="viewControllers" id="NIv-9F-nOM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybd-qN-KmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
