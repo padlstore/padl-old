@@ -12,6 +12,8 @@
 		9227994420CA072B00D12407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9227994220CA072B00D12407 /* Main.storyboard */; };
 		9227994620CA072B00D12407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9227994520CA072B00D12407 /* Assets.xcassets */; };
 		9227994920CA072B00D12407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9227994720CA072B00D12407 /* LaunchScreen.storyboard */; };
+		9227995320CA104E00D12407 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9227995220CA104E00D12407 /* ProfileViewController.swift */; };
+		9227995520CA130200D12407 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9227995420CA130200D12407 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9227994520CA072B00D12407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9227994820CA072B00D12407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9227994A20CA072B00D12407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9227995220CA104E00D12407 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9227995420CA130200D12407 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				9227993E20CA072B00D12407 /* AppDelegate.swift */,
 				9227994020CA072B00D12407 /* ViewController.swift */,
+				9227995220CA104E00D12407 /* ProfileViewController.swift */,
+				9227995420CA130200D12407 /* CameraViewController.swift */,
 				9227994220CA072B00D12407 /* Main.storyboard */,
 				9227994520CA072B00D12407 /* Assets.xcassets */,
 				9227994720CA072B00D12407 /* LaunchScreen.storyboard */,
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9227995320CA104E00D12407 /* ProfileViewController.swift in Sources */,
+				9227995520CA130200D12407 /* CameraViewController.swift in Sources */,
 				9227994120CA072B00D12407 /* ViewController.swift in Sources */,
 				9227993F20CA072B00D12407 /* AppDelegate.swift in Sources */,
 			);
