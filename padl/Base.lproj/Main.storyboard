@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Thin</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Profile-->
         <scene sceneID="az4-R1-OAl">
@@ -38,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="397.60000000000002" y="386.35682158920542"/>
         </scene>
-        <!--Message List View Controller-->
+        <!--Messages-->
         <scene sceneID="aY6-UM-wzs">
             <objects>
-                <tableViewController id="Lee-Tn-Jaa" customClass="MessageListViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Lee-Tn-Jaa" customClass="ChannelListViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oXd-bK-faD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,10 +109,11 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="seS-4e-fe5"/>
+                    <navigationItem key="navigationItem" title="Messages" id="hl8-Et-IUe"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALF-r3-gJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1469.5999999999999" y="1080.8095952023989"/>
+            <point key="canvasLocation" x="-1466" y="1789"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="y61-AM-Fw6">
@@ -119,7 +128,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVL-E6-CU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1476" y="1832"/>
+            <point key="canvasLocation" x="-1466" y="2505"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="udE-y2-YB6">
+            <objects>
+                <navigationController id="fDI-Dt-Len" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W3k-Mb-6ec">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.28627450980392155" green="0.45490196078431372" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Lee-Tn-Jaa" kind="relationship" relationship="rootViewController" id="9Ro-QM-H8y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zig-OR-4s1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1466" y="1081"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="cqh-dF-VUk">
@@ -221,6 +247,54 @@
             </objects>
             <point key="canvasLocation" x="397.60000000000002" y="-277.51124437781112"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="E22-OE-Vfx">
+            <objects>
+                <viewController id="Pcv-j8-PZb" customClass="LoginViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DBG-93-OZL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tl-Av-xbf">
+                                <rect key="frame" x="79" y="108" width="217" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="nameField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-1z-Ms4">
+                                <rect key="frame" x="64" y="430" width="247" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZ7-Z7-VPV">
+                                <rect key="frame" x="64" y="480" width="247" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85615112352352596" green="0.85201512775771182" blue="0.8602871192893401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="LOGIN ANONYMOUSLY">
+                                    <color key="titleColor" red="0.28627450980392155" green="0.45490196078431372" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginDidTouch:" destination="Pcv-j8-PZb" eventType="touchUpInside" id="iJd-p5-IVQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980392155" green="0.45490196078431372" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="JEh-fJ-KJA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Ers-bA-Dj2"/>
+                    <connections>
+                        <outlet property="nameField" destination="ba6-1z-Ms4" id="biw-W1-WVi"/>
+                        <segue destination="fDI-Dt-Len" kind="presentation" identifier="LoginToChat" id="U39-L1-o5F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qh-rr-UFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1466.4000000000001" y="379.16041979010498"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Zw1-zX-Til">
             <objects>
@@ -234,7 +308,7 @@
                         <segue destination="gId-Rx-GU0" kind="relationship" relationship="viewControllers" id="hMz-0f-vGI"/>
                         <segue destination="Ef0-Ae-hus" kind="relationship" relationship="viewControllers" id="ptP-zm-YeL"/>
                         <segue destination="HsT-8n-wJs" kind="relationship" relationship="viewControllers" id="Gyn-wF-Ei3"/>
-                        <segue destination="Lee-Tn-Jaa" kind="relationship" relationship="viewControllers" id="A7W-k5-ZMR"/>
+                        <segue destination="Pcv-j8-PZb" kind="relationship" relationship="viewControllers" id="6t5-mx-bqW"/>
                         <segue destination="TXu-24-5AS" kind="relationship" relationship="viewControllers" id="NIv-9F-nOM"/>
                     </connections>
                 </tabBarController>
