@@ -43,7 +43,7 @@ class ChannelListViewController: UITableViewController {
     // MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "RW RIC"
+        title = "Channels"
         observeChannels()
     }
     

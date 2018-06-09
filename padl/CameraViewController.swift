@@ -23,16 +23,42 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+    @IBAction func selectImageFromCamera(_ sender: Any) {
+        let imagePickerController = UIImagePickerController() // View controller that lets user pick media
         
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            imagePickerController.sourceType = UIImagePickerControllerSourceType.camera
+            imagePickerController.cameraCaptureMode = .photo
+            imagePickerController.modalPresentationStyle = .fullScreen
+            present(imagePickerController,animated: true,completion: nil)
+        } else {
+            noCamera()
+        }
+    }
+    
+    func noCamera(){
+        let alertVC = UIAlertController(
+            title: "No Camera",
+            message: "Sorry, this device has no camera",
+            preferredStyle: .alert)
+        let okAction = UIAlertAction(
+            title: "OK",
+            style:.default,
+            handler: nil)
+        alertVC.addAction(okAction)
+        present(
+            alertVC,
+            animated: true,
+            completion: nil)
+    }
+    
+    @IBAction func selectImageFromPhotoLibrary(_ sender: Any) {
         let imagePickerController = UIImagePickerController() // View controller that lets user pick media
         
         //CHANGE THIS TO ALLOW FOR USING IMAGES (.camera)
         imagePickerController.sourceType = .photoLibrary
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
-        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
