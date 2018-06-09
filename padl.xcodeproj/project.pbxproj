@@ -17,6 +17,8 @@
 		9227995520CA130200D12407 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9227995420CA130200D12407 /* CameraViewController.swift */; };
 		9227995720CA1C1C00D12407 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9227995620CA1C1C00D12407 /* SearchViewController.swift */; };
 		92AB171220CB55F200AA9163 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB171120CB55F200AA9163 /* MessageListViewController.swift */; };
+		92AB171420CB58C600AA9163 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB171320CB58C600AA9163 /* Channel.swift */; };
+		92AB171620CB5C0D00AA9163 /* CreateChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB171520CB5C0D00AA9163 /* CreateChannelCell.swift */; };
 		D9EC8604D21756C018124260 /* Pods_padl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4BBCB00C6AD5EFFE0699C9 /* Pods_padl.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		9227995420CA130200D12407 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		9227995620CA1C1C00D12407 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		92AB171120CB55F200AA9163 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		92AB171320CB58C600AA9163 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		92AB171520CB5C0D00AA9163 /* CreateChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChannelCell.swift; sourceTree = "<group>"; };
 		AAC68322137D287F0E505795 /* Pods-padl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-padl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-padl/Pods-padl.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +97,9 @@
 				9227995220CA104E00D12407 /* ProfileViewController.swift */,
 				9227995420CA130200D12407 /* CameraViewController.swift */,
 				9227994220CA072B00D12407 /* Main.storyboard */,
+				92AB171520CB5C0D00AA9163 /* CreateChannelCell.swift */,
 				92AB171120CB55F200AA9163 /* MessageListViewController.swift */,
+				92AB171320CB58C600AA9163 /* Channel.swift */,
 				9227995620CA1C1C00D12407 /* SearchViewController.swift */,
 				9227994520CA072B00D12407 /* Assets.xcassets */,
 				9227994720CA072B00D12407 /* LaunchScreen.storyboard */,
@@ -227,12 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AB171420CB58C600AA9163 /* Channel.swift in Sources */,
 				9227995720CA1C1C00D12407 /* SearchViewController.swift in Sources */,
 				9227995320CA104E00D12407 /* ProfileViewController.swift in Sources */,
 				9227995520CA130200D12407 /* CameraViewController.swift in Sources */,
 				9227994120CA072B00D12407 /* ViewController.swift in Sources */,
 				92AB171220CB55F200AA9163 /* MessageListViewController.swift in Sources */,
 				9227993F20CA072B00D12407 /* AppDelegate.swift in Sources */,
+				92AB171620CB5C0D00AA9163 /* CreateChannelCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
