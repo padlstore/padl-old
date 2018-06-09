@@ -54,23 +54,27 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq9-ic-3At">
+                                            <rect key="frame" x="320" y="6" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Create"/>
+                                            <connections>
+                                                <action selector="createChannel:" destination="Lee-Tn-Jaa" eventType="touchUpInside" id="UQY-eA-nx3"/>
+                                            </connections>
+                                        </button>
                                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Create a New Channel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9hu-Qa-Rap">
-                                            <rect key="frame" x="16" y="6" width="282" height="30"/>
+                                            <rect key="frame" x="16" y="6" width="289" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq9-ic-3At">
-                                            <rect key="frame" x="306" y="6" width="46" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Create"/>
-                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="createChannelButton" destination="eq9-ic-3At" id="Cuh-in-7Q1"/>
                                     <outlet property="newChannelNameField" destination="9hu-Qa-Rap" id="Muq-qY-GTC"/>
+                                    <segue destination="2ks-Xx-IgY" kind="showDetail" identifier="ShowChannel" action="showViewController:sender:" id="HR2-JD-unT"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExistingChannel" id="cXg-xq-nhS">
@@ -101,6 +105,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALF-r3-gJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1469.5999999999999" y="1080.8095952023989"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="y61-AM-Fw6">
+            <objects>
+                <viewController id="2ks-Xx-IgY" customClass="ChatViewController" customModule="padl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ssm-JN-hK6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="lWI-mP-FOd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVL-E6-CU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1476" y="1832"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="cqh-dF-VUk">
